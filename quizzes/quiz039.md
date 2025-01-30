@@ -1,4 +1,9 @@
-## code
+# Quiz032 2025/01
+
+## Paper solution
+None because this was done directly on computer.
+
+## Code
 ```.py
 import sqlite3
 
@@ -28,3 +33,7 @@ output = cursor.fetchone()[0]
 
 print(f"average word length is {output:.2f}")
 ```
+
+## Proof of work
+![image](https://github.com/user-attachments/assets/f5b72dae-d349-4618-be1f-3415070d5ef1)
+

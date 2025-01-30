@@ -61,5 +61,7 @@ GUI.run()
 
 
 ## Proof of Work
-https://github.com/user-attachments/assets/3a32eff4-9fbe-4e55-abce-2e33b58bcbe8
+https://github.com/user-attachments/assets/721f707d-b1fa-49e1-8eaf-0de9b00c0095
+
+
 

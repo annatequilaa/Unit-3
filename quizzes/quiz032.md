@@ -28,6 +28,7 @@ class HumanResources:
 ```
 
 ## Proof of Work
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/6ab64bca-e61a-4245-a439-f2a2ef5323db)
+
 
 

@@ -68,5 +68,9 @@ GUI.run()
 ## Proof of Work
 https://github.com/user-attachments/assets/7d548181-a54f-437a-a94e-57495a91cefe
 
+## Diagrams
+![image](https://github.com/user-attachments/assets/552365dd-6268-4891-b6d2-1732636f188c)
+Figure taken from '[2024] Quizzes' Google Slides presentation
+
 
 

@@ -53,7 +53,7 @@ class quiz036(MDApp):
             btn.md_bg_color = 'black'
             btn.text_color = 'white'
             btn.text = 'Dark mode'
-            print("yo")
+
 
 GUI = quiz036()
 GUI.run()

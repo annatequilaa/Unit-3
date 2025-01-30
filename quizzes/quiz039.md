@@ -37,3 +37,9 @@ print(f"average word length is {output:.2f}")
 ## Proof of work
 ![image](https://github.com/user-attachments/assets/f5b72dae-d349-4618-be1f-3415070d5ef1)
 
+## Diagrams
+ER Diagram
+![image](https://github.com/user-attachments/assets/3887e9ed-379a-44ec-821f-7b1ed5b52a57)
+Figure taken from '[2024] Quizzes' Google Slides presentation
+
+

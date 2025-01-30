@@ -27,3 +27,8 @@ class student(Person):
 
 ## Proof of Work
 ![image](https://github.com/user-attachments/assets/3aded43d-78f5-40a5-8f0a-3922ee4ac6a1)
+
+## Diagrams
+UML Diagram
+![image](https://github.com/user-attachments/assets/d15c4c3f-c790-4da3-bb97-8bd279be30a4)
+

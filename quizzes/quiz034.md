@@ -24,3 +24,7 @@ class Flight:
 
 ## Proof of Work
 ![image](https://github.com/user-attachments/assets/b6d22ee4-fd21-456f-81f3-ca4c4f27243a)
+
+## Diagrams
+UML Diagram
+![image](https://github.com/user-attachments/assets/e6892d2b-05b7-40fb-9685-f1e8aa1f404f)

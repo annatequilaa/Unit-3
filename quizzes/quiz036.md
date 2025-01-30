@@ -63,6 +63,12 @@ GUI.run()
 ## Proof of Work
 https://github.com/user-attachments/assets/90f658cc-992c-4d42-b5c1-ad88b1e338b6
 
+## Diagrams
+UML Diagram
+![image](https://github.com/user-attachments/assets/bf5a8398-b034-4552-9c75-7ca8b0155fe8)
+
+
+
 
 
 

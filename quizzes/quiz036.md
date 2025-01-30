@@ -4,7 +4,7 @@
 This was done on computer because it's kivy
 
 ## Code
-###kivy
+### Kivy
 ```.kv
 MDScreen:
     size: 500, 500

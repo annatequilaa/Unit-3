@@ -85,7 +85,6 @@ class quiz037(MDApp):
         self.count = 0
 
     def build(self):
-        Window.size = (500, 500)
         pass
 
     def button_pressed(self, btn):

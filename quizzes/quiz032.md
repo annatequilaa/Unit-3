@@ -31,4 +31,10 @@ class HumanResources:
 ![image](https://github.com/user-attachments/assets/6ab64bca-e61a-4245-a439-f2a2ef5323db)
 
 
+## Diagram
+UML Diagram
+![image](https://github.com/user-attachments/assets/3ecb40f4-44ce-4e61-be70-2cd521f67f25)
+Figure taken from '[2024] Quizzes' Google Slides presentation
+
+
 

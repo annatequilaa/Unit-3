@@ -136,5 +136,7 @@ GUI.run()
 
 
 ## Proof of Work
+https://github.com/user-attachments/assets/3eeaf189-f561-49b8-9535-3aa772ef16be
+
 
 

@@ -1,7 +1,7 @@
 # Quiz034 2025/01
 
 ## Paper solution
-This was done on computer because it's kivy
+This was done on computer
 
 ## Code
 ```.py

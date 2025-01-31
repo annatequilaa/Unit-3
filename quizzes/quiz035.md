@@ -1,7 +1,8 @@
 # Quiz035 2025/01
 
 ## Paper solution
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/deaa2a73-dc9c-4941-a059-817de2c894bc)
+
 
 ## Code
 ```.py

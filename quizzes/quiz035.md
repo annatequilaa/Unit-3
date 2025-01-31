@@ -1,7 +1,7 @@
 # Quiz035 2025/01
 
 ## Paper solution
-UPLOADDDD
+![Uploading image.png…]()
 
 ## Code
 ```.py

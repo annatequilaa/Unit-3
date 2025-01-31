@@ -137,5 +137,9 @@ GUI.run()
 ## Proof of Work
 https://github.com/user-attachments/assets/3eeaf189-f561-49b8-9535-3aa772ef16be
 
+## Diagram
+UML Diagram
+![image](https://github.com/user-attachments/assets/b903309b-4446-40b3-98d1-0f7c82300fcc)
+
 
 

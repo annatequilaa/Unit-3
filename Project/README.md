@@ -7,7 +7,7 @@ There are also other issues stemming from the main problem. As of current, stude
 
 Another problem is that some students have dietary restrictions such as halal or vegetarian, therefore the founder would like students to have access to the detailed information on each product. And due to students’ limited budgets, they should be able to double check their total spending before they confirm the order. 
 
-_*see evidence of consultation in Appendix A_
+_*see evidence of consultation in the Appendix_
 
 
 ## Proposed Solution

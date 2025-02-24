@@ -1,6 +1,10 @@
-# Criterion A: Planning
+# Unit 3: Online Food Order Platform
+![giphy](https://github.com/user-attachments/assets/a94eed6a-dc3e-49b3-b079-c3d39c76a7a1)
+gif by @E3maly on GIPHY, https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHZlODlrNDJlOXE3a3RrNzg4MzUzOTJ1NWhqbWFmY2p5ZzhybXQ5ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iUaDOqormK0U5yEdRT/giphy.gif
 
-## Problem definition
+## Criterion A: Planning
+
+### Problem definition
 “The Good Old Times” (in this document referred to as TGOT) is a new business that lets an international boarding school’s students buy international and traditional food from all over the world, with the mission to tackle students’ homesickness and make them feel more comfortable on campus. However, the founder has expressed difficulties accessing these foods because the school is located in a relatively remote area. As a result, she wishes to implement some sort of online platform that showcases all the products and allows students to order them by selecting them to solve this problem. 
 
 There are also other issues stemming from the main problem. As of current, students in this school often mistaken other students’ packages as theirs, and some even take others’ deliveries on purpose. Hence, the founder of TGOT wishes for a way to identify these students when they are paying on delivery when the packages arrive. The information students are willing to share are their emails and names (both first and last name), but it would be better if the identification process is more simple and secure instead of entering phone numbers every time. Moreover, the students would need to be notified when packages are delivered because food has a short expiry date. 
@@ -10,10 +14,10 @@ Another problem is that some students have dietary restrictions such as halal or
 _*see evidence of consultation in the Appendix_
 
 
-## Proposed Solution
+### Proposed Solution
 
 
-## Success Criteria (Be more specific than this, more specific = better)
+### Success Criteria (Be more specific than this, more specific = better)
 1. The application includes a log-in/registration system to identify students. 
     - [Issue tackled: “students in this school often mistaken other students’ packages as theirs, and some even take others’ deliveries on purpose”, “but it would be better if the identification process is more secure”]
 
@@ -29,7 +33,7 @@ _*see evidence of consultation in the Appendix_
 5. When the package is ordered, a pop up notification would appear on the screen of the user to inform them of the estimated arrival time.  
     - [Issue tackled: “Moreover, the students would need to be notified when packages are delivered because food has a short expiry date.”]
 
-# Criterion B: Design
+## Criterion B: Design
 
 ### System Diagram
 
@@ -57,7 +61,7 @@ _*see evidence of consultation in the Appendix_
 ### Test plan
 
 
-## Record of Tasks
+### Record of Tasks
 | **Planned action**                                      | **Planned outcome**                                                                                                                                  | **Time estimate** | **Target completion date** | **Criteria** |
 |---------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|----------------------------|--------------|
 | Interview the client for a description of the problem   | After listening to the client's description of the problem, I would finish writing the problem definition                                            | 30 min            | Feb 4                      | A            |
@@ -71,10 +75,10 @@ _*see evidence of consultation in the Appendix_
 | Finalize Record of Tasks table                          | Make sure everything is completed based on the record of tasks table                                                                                 | 15 min            | Mar 12                     | A            |
 
 
-# Criterion C: Development
+## Criterion C: Development
 
-# Criterion D: Functionality
+## Criterion D: Functionality
 
-# Appendix
+## Appendix
 ![image](https://github.com/user-attachments/assets/035375f0-83b7-4e5f-afcf-904f9271e147)
 Screenshot of the transcript of the interview. Document could be accessed here: https://docs.google.com/document/d/13I5UP34eFG2Ku2RaJQjZK8SNfTHSezlCicRTwNSn8mU/edit?tab=t.0

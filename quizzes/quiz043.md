@@ -23,5 +23,6 @@ class palNum:
 ![image](https://github.com/user-attachments/assets/5c50d50a-6438-4e47-b9b5-554efb7f7df0)
 
 ## Diagram
-![image](https://github.com/user-attachments/assets/3ed16658-e9f6-4e5a-862d-61073f620cca)
+![image](https://github.com/user-attachments/assets/f3229880-73d2-458d-b04f-38701692a82d)
+
 

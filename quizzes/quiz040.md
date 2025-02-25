@@ -23,3 +23,4 @@ select * from customers where customer_id = 12
 
 
 ## Diagram
+![image](https://github.com/user-attachments/assets/5f3800b7-94ec-404d-bf0c-511a5c0685d4)

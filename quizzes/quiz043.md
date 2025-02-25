@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/6b480876-fc94-44a6-a7e3-9dab0151faec)# Quiz043 2025/01
+# Quiz043 2025/01
 
 ## Paper solution
 ![image](https://github.com/user-attachments/assets/1d15b61c-5106-454b-b791-70211cc0c8c2)

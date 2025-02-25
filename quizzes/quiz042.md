@@ -16,14 +16,13 @@ for row in result:
     id, send_id, rece_id, amount, signature = row
     string_hash = f"id {id},sender_id {send_id},receiver_id {rece_id},amount {amount}"
     if check_password(hashed_password = signature, user_password = string_hash):
-        print("TX IS CORRECT")
-
+        print(f'\33[1;32mTx(id={id})Signature matches\033[00m')
     else:
-        print("TX is bad")
+        print(f'\33[1;31mTx(id={id})Error signature\033[00m')
 ```
 
 ## Proof of Work
-![image](https://github.com/user-attachments/assets/d47749f5-3c1d-4542-b2eb-e93e1f505dd0)
+![image](https://github.com/user-attachments/assets/289421cd-a8a2-4b70-8781-eec43f5c0b60)
 
 
 ## Diagram

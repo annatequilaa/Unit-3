@@ -1,6 +1,7 @@
 # Quiz032 2025/01
 
 ## Paper solution
+![Uploading image.png…]()
 
 
 ## Code

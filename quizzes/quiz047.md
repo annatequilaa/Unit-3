@@ -35,6 +35,7 @@ class CalorieCount():
 
 
 ## Diagram
+UML Diagram
 ![image](https://github.com/user-attachments/assets/f5232430-9b2d-460d-ad6c-ae89af1f8c01)
 
 

@@ -1,7 +1,7 @@
 # Quiz041 2025/02
 
 ## Paper solution
-
+No paper solution as this was done in class
 
 ## Code
 ```.py

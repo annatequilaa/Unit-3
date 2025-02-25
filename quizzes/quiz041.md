@@ -10,7 +10,6 @@ No paper solution as this was done in class
 
 ## Proof of Work
 
-
 ## Diagram
 ![image](https://github.com/user-attachments/assets/1431f17d-46d0-4bb3-9a86-c69385ff75e8)
 

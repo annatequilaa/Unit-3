@@ -1,7 +1,7 @@
 # Quiz032 2025/01
 
 ## Paper solution
-
+![image](https://github.com/user-attachments/assets/9209955f-ac18-4009-8ed5-428e72d89508)
 
 ## Code
 ```.py
@@ -23,6 +23,7 @@ for row in result:
 ```
 
 ## Proof of Work
+![image](https://github.com/user-attachments/assets/d47749f5-3c1d-4542-b2eb-e93e1f505dd0)
 
 
 ## Diagram

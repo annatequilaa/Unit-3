@@ -30,5 +30,6 @@ class quiz045():
 
 
 ## Diagram
+![image](https://github.com/user-attachments/assets/8d793cba-1258-40ab-9f02-51c75b71c7e9)
 
 

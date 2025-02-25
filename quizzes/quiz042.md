@@ -1,4 +1,4 @@
-# Quiz032 2025/01
+# Quiz042 2025/01
 
 ## Paper solution
 ![image](https://github.com/user-attachments/assets/38e5815f-8ada-43bc-800b-31660a037bfc)

@@ -1,6 +1,7 @@
 # Quiz043 2025/01
 
 ## Paper solution
+![image](https://github.com/user-attachments/assets/1d15b61c-5106-454b-b791-70211cc0c8c2)
 
 
 ## Code
@@ -22,4 +23,5 @@ class palNum:
 ![image](https://github.com/user-attachments/assets/5c50d50a-6438-4e47-b9b5-554efb7f7df0)
 
 ## Diagram
+![image](https://github.com/user-attachments/assets/3ed16658-e9f6-4e5a-862d-61073f620cca)
 

@@ -1,7 +1,7 @@
 # Quiz032 2025/01
 
 ## Paper solution
-
+database so none
 
 ## Code
 ```.sql

@@ -1,1 +1,30 @@
+# Quiz032 2025/01
+
+## Paper solution
+
+
+## Code
+```.py
+from quiz040_secure_password import check_password
+from mylib import DatabaseManager
+
+x = DatabaseManager("bitcoin_exchange.db")
+result = x.search("SELECT * from ledger")
+x.close()
+
+for row in result:
+    id, send_id, rece_id, amount, signature = row
+    string_hash = f"id {id},sender_id {send_id},receiver_id {rece_id},amount {amount}"
+    if check_password(hashed_password = signature, user_password = string_hash):
+        print("TX IS CORRECT")
+
+    else:
+        print("TX is bad")
+```
+
+## Proof of Work
+
+
+## Diagram
+
 

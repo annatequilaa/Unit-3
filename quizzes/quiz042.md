@@ -1,7 +1,7 @@
 # Quiz032 2025/01
 
 ## Paper solution
-![image](https://github.com/user-attachments/assets/9209955f-ac18-4009-8ed5-428e72d89508)
+
 
 ## Code
 ```.py

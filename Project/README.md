@@ -78,6 +78,7 @@ _*see evidence of consultation in the Appendix_
 
 
 ## Criterion C: Development
+Product informatino and image credits to https://www.pinoys.eu/
 
 ## Criterion D: Functionality
 

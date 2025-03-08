@@ -78,6 +78,14 @@ _*see evidence of consultation in the Appendix_
 
 
 ## Criterion C: Development
+
+### Packages used
+- sqlite3
+- kivy
+- kivymd
+- passlib
+- datetime
+
 Product information and image credits to https://www.pinoys.eu/
 
 ## Criterion D: Functionality

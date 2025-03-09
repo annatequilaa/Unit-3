@@ -87,7 +87,11 @@ _*see evidence of consultation in the Appendix_
 - datetime
 
 Product information and image credits to https://www.pinoys.eu/, specifically:
-https://www.pinoys.eu/tl/p/instant-pho-bo-rice-noodle-soup-beef-flavour-60-g-vifon#
+- https://www.pinoys.eu/tl/p/instant-pho-bo-rice-noodle-soup-beef-flavour-60-g-vifon#
+- https://www.pinoys.eu/tl/p/crispy-onions-in-chili-oil-210-g-lao-gan-ma#
+- https://www.pinoys.eu/tl/p/shin-ramyun-spicy-120-g-nongshim#
+
+(images processed by Ann Tsai using Microsoft Photos application and https://www.remove.bg/)
 
 ## Criterion D: Functionality
 

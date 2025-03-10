@@ -57,6 +57,7 @@ _*see evidence of consultation in the Appendix_
 ### UML Diagram (Object Oriented Programming)
 
 ### ER Diagram (Databases)
+![meow drawio](https://github.com/user-attachments/assets/c45d02a6-2afe-43a4-93b7-9a717e404d8e)
 
 ### wireframe diagram (User Interface)
 

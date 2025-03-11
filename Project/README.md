@@ -47,8 +47,9 @@ _*see evidence of consultation in the Appendix_
 ### Flow diagrams for algorithms
 
 
+![flowchart1 drawio](https://github.com/user-attachments/assets/a21acc40-6466-453f-b0b9-92f5e68e789e)
 
-**Fig. 1** This is the flow diagram
+**Fig. 2** This is the flow diagram for try_login() which attempts log in for the information entered in the text field
 
 
 

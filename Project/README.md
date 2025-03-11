@@ -152,7 +152,7 @@ none for now
 - passlib
 - random
 
-Chatgpt has been used for debugging purposes in this project. 
+Chatgpt has been used for debugging purposes in this project. (https://chatgpt.com/)
 
 Product information and image credits to https://www.pinoys.eu/, specifically:
 - https://www.pinoys.eu/tl/p/instant-pho-bo-rice-noodle-soup-beef-flavour-60-g-vifon#

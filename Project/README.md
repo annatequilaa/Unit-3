@@ -150,7 +150,7 @@ none for now
 - **For loops**: Used to iterate through items in the database. 
 - **Functions**: Used to organize my code into reusable and callable blocks, which makes the code more organized and easier to debug and alter. Example functions in this application: add_to_cart(), try_register(). 
 - **Classes (OOP)**: Used to structure the application, for example, the different screens (HomeScreen, CartScreen, etc.) in this application.
-- **Hashing**: Used to store password securely in a database. 
+- **Hashing**: Used to store password securely in a database by encrypting it. 
 - **Databases**: Allows data to be saved and retrieved when required. Used to store user information, product information, etc.
 
 ### Packages used
@@ -180,10 +180,135 @@ For the log in screen, I clear it before the screen is displayed so the sensitiv
 ```
 However, for sign up screen, I clear it on the moment the screen is displayed because sign up has less sensitive information. 
 
+For logging in, the main function, ```try_login()``` is activated upon the release of the log in button, and it checks whether a username is entered and whether a password is entered, then it checks for whether there exists such a user, then it checks whether the username matches the encrypted password. If all of the above conditions are met, then the user is led to the home page. 
+```.py
+    def try_login(self):
+        username = self.ids.username.text
+        password1 = self.ids.password.text
+        if username == "":
+            self.ids.username.helper_text = "please enter a username"
+        else:
+            self.ids.username.helper_text = ""
+        if password1 == "":
+            self.ids.password.helper_text = "please enter a password"
+        else:
+            self.ids.password.helper_text = ""
+        if password1 and username:
+            query = f"SELECT * FROM user WHERE username = '{username}'"
+            db = DatabaseManager(name="login.sql")
+            result = db.search(query)
+            if len(result) == 1:
+                hash_column = 3
+                hash = result[0][hash_column]
+                if check_password(hash, password1):
+                    LoginScreen.current_user = username
+                    self.parent.current = "HomeScreen"
+                else:
+                    self.ids.password.helper_text = "incorrect password"
+            else:
+                self.ids.username.helper_text = "invalid username or password"
 
+    def switch_to_signup(self):
+        self.parent.current = "SignupScreen"
+```
+```.kv
+<LoginScreen>:
+    MDScreen:
+        MDFloatLayout:
+            md_bg_color: "#e4ccb0"
+            Image:
+                source: "logo-clear.png"
+                pos_hint: {"center_x":.22, "center_y": .85}
+                size_hint: .5,.5
+            MDLabel:
+                text: "Welcome back!"
+                color: "#6a5750"
+                font_size: 40
+                font_name: "Lora.ttf"
+                pos_hint: {"center_x":.6, "center_y": .70}
+            MDLabel:
+                text: "Log in"
+                bold: True
+                color: "#210d02"
+                font_size: 50
+                font_name: "Lora.ttf"
+                pos_hint: {"center_x":.6, "center_y": .63}
 
+            MDFloatLayout:
+                size_hint: .85,.08
+                pos_hint: {"center_x":.52, "center_y": .48}
 
+                MDLabel:
+                    text: "Username"
+#                    font_name: "Lora.ttf"
+                    font_size: "12sp"
+                    pos_hint: {"center_x": .5, "center_y": .95}
+                    theme_text_color: "Custom"
+                    text_color: "#6a5750"
 
+                MDTextField:
+                    id: username
+                    font_name_helper_text: "Lora.ttf"
+                    font_name: "Lora.ttf"
+                    helper_text_color_normal: "#ad2923"
+                    mode: "line"
+                    helper_text: ""
+                    helper_text_mode: "persistent"
+                    size_hint_x: 0.9
+                    pos_hint: {"center_x": .45, "center_y": .5}
+                    foreground_color: "#210d02"
+                    hint_text_color_focus: "#6a5750"
+                    line_color_focus: "#6a5750"
+                    icon_right: "account"
+
+            MDFloatLayout:
+                size_hint: .85,.08
+                pos_hint: {"center_x":.52, "center_y": .35}
+
+                MDLabel:
+                    text: "Password"
+#                    font_name: "Lora.ttf"
+                    font_size: "12sp"
+                    pos_hint: {"center_x": .5, "center_y": .95}
+                    theme_text_color: "Custom"
+                    text_color: "#6a5750"
+
+                MDTextField:
+                    id: password
+                    font_name: "Lora.ttf"
+                    helper_text_color_normal: "#ad2923"
+                    helper_text: ""
+                    helper_text_mode: "persistent"
+                    mode: "line"
+                    password: True
+                    size_hint_x: 0.9
+                    pos_hint: {"center_x": .45, "center_y": .5}
+                    foreground_color: "#210d02"
+                    hint_text_color_focus: "#6a5750"
+                    line_color_focus: "#6a5750"
+                    icon_right: "key"
+
+            MDFlatButton:
+                id: login_btn
+                text: "[color=#f8e2ca]Log in[/color]"
+                md_bg_color: "#8b5742"
+                text_color: "#f8e2ca" #fsr this doesn't work?????
+                font_name: "Lora.ttf"
+                size_hint: .79, .08
+                pos_hint: {"center_x": .48, "center_y": .21}
+#                line_color: "#6a5750"
+#                line_width: 2
+                on_release: root.try_login()
+            MDTextButton:
+                text: "Don't have an account? Sign up here"
+#                font_name: "Lora.ttf"
+                font_size: "12sp"
+                pos_hint: {"center_x": .48, "center_y": .12}
+                halign: "center"
+                on_press: root.switch_to_signup()
+```
+
+---
 Chatgpt has been used for debugging purposes in this project. (https://chatgpt.com/)
 
 Product information and image credits to https://www.pinoys.eu/, specifically:

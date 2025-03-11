@@ -66,6 +66,19 @@ _*see evidence of consultation in the Appendix_
 
 **Fig.7** ER diagram of the database
 
+### Tables
+The database is named login.sql by accident, and due to issues with Pycharm's setup, it's too late to change the name. I would have named it app.sql. 
+![image](https://github.com/user-attachments/assets/242435fd-3ffc-4ab5-8dde-1aa883bf4ba2)
+
+
+**Fig.7** table "products" in login.sql in the database
+
+![image](https://github.com/user-attachments/assets/e856ec6b-bdfb-4b19-96a8-46320469c251)
+
+
+**Fig.7** table "user" in login.sql in the database (the first row was a debugging result)
+
+
 ### wireframe diagram (User Interface)
 
 ### Test plan

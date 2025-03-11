@@ -180,7 +180,7 @@ For the log in screen, I clear it before the screen is displayed so the sensitiv
 ```
 However, for sign up screen, I clear it on the moment the screen is displayed because sign up has less sensitive information. 
 
-For logging in, the main function, ```try_login()``` is activated upon the release of the log in button, and it checks whether a username is entered and whether a password is entered, then it checks for whether there exists such a user, then it checks whether the username matches the encrypted password. If all of the above conditions are met, then the user is led to the home page. 
+For logging in, the main function, ```try_login()``` is activated upon the release of the log in button, and it checks whether a username is entered and whether a password is entered, then it checks for whether there exists such a user, then it checks whether the username matches the encrypted password. The way it checks whether there exists such a user and whether the username matches the encrypted password is by using the DatabaseManager class from my other file, mylib.py, to query for entries that match the username entered, and if that is equal to 1, it checks for whether the password of that entry decrypted using also another function from mylib.py match the one enntered. If all of the above conditions are met, then the user is led to the home page. 
 ```.py
     def try_login(self):
         username = self.ids.username.text
@@ -211,6 +211,43 @@ For logging in, the main function, ```try_login()``` is activated upon the relea
     def switch_to_signup(self):
         self.parent.current = "SignupScreen"
 ```
+(MyApp.py)
+```.py
+import sqlite3
+from passlib.context import CryptContext
+from random import randint
+
+pwd_config = CryptContext(schemes=["pbkdf2_sha256"],
+                          default="pbkdf2_sha256",
+                          pbkdf2_sha256__default_rounds=30000)
+
+def encrypt_password(user_password):
+    return pwd_config.hash(user_password)
+
+def check_password(hashed_password, user_password):
+    return pwd_config.verify(user_password, hashed_password)
+
+def random_days():
+    return randint(2,12)
+
+class DatabaseManager:
+    def __init__(self, name: str):
+        self.connection = sqlite3.connect(name)
+        self.cursor = self.connection.cursor()
+
+    def search(self, query):
+        result = self.cursor.execute(query).fetchall()
+        return result
+
+    def close(self):
+        self.connection.close()
+
+
+    def run_save(self,query):
+        self.cursor.execute(query)
+        self.connection.commit()
+```
+(mylib.py)
 ```.kv
 <LoginScreen>:
     MDScreen:
@@ -307,6 +344,7 @@ For logging in, the main function, ```try_login()``` is activated upon the relea
                 halign: "center"
                 on_press: root.switch_to_signup()
 ```
+(Kivymd code)
 
 ---
 Chatgpt has been used for debugging purposes in this project. (https://chatgpt.com/)

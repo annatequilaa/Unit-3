@@ -145,6 +145,14 @@ none for now
 
 ## Criterion C: Development
 
+### Techniques used
+- **If/else conditions statements**: 
+- **For loops**: 
+- **Functions**: Used to organize my code into reusable and callable blocks, which makes the code more organized and easier to debug and alter. Example functions in this application: add_to_cart(), try_register(). 
+- **Classes (OOP)**: 
+- **Hashing**: 
+- **Databases**: 
+
 ### Packages used
 - sqlite3
 - kivy

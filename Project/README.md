@@ -160,6 +160,30 @@ none for now
 - passlib
 - random
 
+### Success criteria 1: Log in/Sign up
+Classes ```LoginScreen``` and ```SignupScreen``` are responsible for the log in and sign up systems. Both classes have a similar function that resets the text fields, as shown below, so that the previous user's information would not be on there when a new user attempts to sign up or log in to improve security and privacy.
+
+```.py
+    def on_pre_enter(self):
+        Clock.schedule_once(self.clear_login, 0.01)
+    def clear_login(self,placeholder):
+        self.ids.password.text = ""
+        self.ids.username.text = ""
+```
+For the log in screen, I clear it before the screen is displayed so the sensitive information wouldn't be seen.
+```.py
+    def on_enter(self):
+    self.ids.pw1.text = ""
+    self.ids.pw2.text = ""
+    self.ids.signup_name.text = ""
+    self.ids.signup_email.text = ""
+```
+However, for sign up screen, I clear it on the moment the screen is displayed because sign up has less sensitive information. 
+
+
+
+
+
 Chatgpt has been used for debugging purposes in this project. (https://chatgpt.com/)
 
 Product information and image credits to https://www.pinoys.eu/, specifically:

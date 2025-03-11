@@ -57,7 +57,8 @@ _*see evidence of consultation in the Appendix_
 ### UML Diagram (Object Oriented Programming)
 
 ### ER Diagram (Databases) 
-![Untitled Diagram drawio](https://github.com/user-attachments/assets/601f1c1b-7d6e-4ce9-a497-36f9f3362607)
+![Untitled Diagram drawio](https://github.com/user-attachments/assets/107dc6cb-f412-430e-bc1a-4def26339d7a)
+
 
 **Fig.7** ER diagram of the database
 

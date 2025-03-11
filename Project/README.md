@@ -673,7 +673,7 @@ Product information and image credits to https://www.pinoys.eu/, specifically:
 (images processed by Ann Tsai using Microsoft Photos application and https://www.remove.bg/)
 
 ## Criterion D: Functionality
-[![Watch the video](https://raw.githubusercontent.com/annatequilaa/Unit-3/main/path/to/video.mp4)](https://raw.githubusercontent.com/username/repository/branch/path/to/video.mp4)
+Project/video.mp4
 
 ## Appendix
 ![image](https://github.com/user-attachments/assets/afb1ad85-ddfc-4e63-8efe-75b9ac3f4201)

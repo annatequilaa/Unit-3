@@ -161,7 +161,7 @@ none for now
 - random
 
 ### User Interface
-For the log-in and sign up page, I followed a tutorial for some parts of the layout, but added my personal fonts and color, and adjusted quite a lot of things to fit the theme I am going for. I followed another tutorial for the home page too, to figure out how scrollable view of cards could be achieved, and how a navigation bar could be made, but I also adjusted it a lot to fit my theme. 
+For the log-in and sign up page, I followed a tutorial[^6] for some parts of the layout, but added my personal fonts and color, and adjusted quite a lot of things to fit the theme I am going for. I followed another tutorial[^4] for the home page too, to figure out how scrollable view of cards could be achieved, and how a navigation bar could be made, but I also adjusted it a lot to fit my theme. 
 
 ### Success criteria 1: Log in/Sign up
 Classes ```LoginScreen``` and ```SignupScreen``` are responsible for the log in and sign up systems. Both classes have a similar function that resets the text fields, as shown below, so that the previous user's information would not be on there when a new user attempts to sign up or log in to improve security and privacy.

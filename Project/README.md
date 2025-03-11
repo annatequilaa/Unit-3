@@ -142,6 +142,11 @@ Product information and image credits to https://www.pinoys.eu/, specifically:
 - https://www.pinoys.eu/tl/p/instant-pho-bo-rice-noodle-soup-beef-flavour-60-g-vifon#
 - https://www.pinoys.eu/tl/p/crispy-onions-in-chili-oil-210-g-lao-gan-ma#
 - https://www.pinoys.eu/tl/p/shin-ramyun-spicy-120-g-nongshim#
+- https://www.pinoys.eu/tl/p/cracker-fita-300-g-m-y-san
+- https://www.pinoys.eu/tl/p/fruit-pudding-lychee-flavour-480-g-cocon#
+- https://www.pinoys.eu/tl/p/shougong-taiwanese-style-cake-120-g-ranli
+- https://www.pinoys.eu/tl/p/mochi-peanut-rice-cake-210-g-szu-shen-po
+- https://www.pinoys.eu/tl/p/rice-cake-sticks-600-g-matamun
 
 (images processed by Ann Tsai using Microsoft Photos application and https://www.remove.bg/)
 

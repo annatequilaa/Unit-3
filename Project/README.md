@@ -117,7 +117,7 @@ _*see evidence of consultation in the Appendix_
 - kivy
 - kivymd
 - passlib
-- datetime
+- random
 
 Product information and image credits to https://www.pinoys.eu/, specifically:
 - https://www.pinoys.eu/tl/p/instant-pho-bo-rice-noodle-soup-beef-flavour-60-g-vifon#

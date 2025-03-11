@@ -62,6 +62,9 @@ _*see evidence of consultation in the Appendix_
 **Fig. 4** This is the flow diagram for confirm() which confirms the order and shows in how many days the product would arrive
 
 ### UML Diagram (Object Oriented Programming)
+![P3_UML drawio](https://github.com/user-attachments/assets/613f94cf-31f8-42c3-b3c6-ce59678f75f0)
+
+**Fig.5** UML diagram of the classes in the application
 
 ### ER Diagram (Databases) 
 ![Untitled Diagram drawio](https://github.com/user-attachments/assets/107dc6cb-f412-430e-bc1a-4def26339d7a)

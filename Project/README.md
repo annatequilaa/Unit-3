@@ -53,18 +53,18 @@ _*see evidence of consultation in the Appendix_
 
 
 
-**Fig. 2** This is the flow diagram 
-
-
-
 **Fig. 3** This is the flow diagram 
+
+
+
+**Fig. 4** This is the flow diagram 
 
 ### UML Diagram (Object Oriented Programming)
 
 ### ER Diagram (Databases) 
 ![Untitled Diagram drawio](https://github.com/user-attachments/assets/107dc6cb-f412-430e-bc1a-4def26339d7a)
 
-**Fig.7** ER diagram of the database
+**Fig.6** ER diagram of the database
 
 
 ### Tables
@@ -74,18 +74,26 @@ The database is named login.sql by accident, and due to issues with Pycharm's se
 **Fig.7** table "products" in login.sql in the database
 
 
+
+
 ![image](https://github.com/user-attachments/assets/e856ec6b-bdfb-4b19-96a8-46320469c251)
 
-**Fig.7** table "user" in login.sql in the database (the first row was a debugging result)
+**Fig.8** table "user" in login.sql in the database (the first row was a debugging result)
+
+
+
 
 
 ![image](https://github.com/user-attachments/assets/221d458d-6256-4b45-a4cb-17c5cf1a3743)
 
-**Fig.7** table "cart_orders" in login.sql in the database. The table is empty right now because no orders have been made in the application. 
+**Fig.9** table "cart_orders" in login.sql in the database. The table is empty right now because no orders have been made in the application. 
+
+
 
 
 
 ### wireframe diagram (User Interface)
+none for now
 
 ### Test plan
 | Success Criteria Addressed | Purpose                                                                            | Input                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Expected Output                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |

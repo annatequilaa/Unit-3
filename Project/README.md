@@ -442,6 +442,7 @@ Product information and image credits to https://www.pinoys.eu/, specifically:
 
 ## Criterion D: Functionality
 
+
 ## Appendix
 ![image](https://github.com/user-attachments/assets/afb1ad85-ddfc-4e63-8efe-75b9ac3f4201)
 

@@ -160,6 +160,9 @@ none for now
 - passlib
 - random
 
+### User Interface
+For the log-in and sign up page, I followed a tutorial for some parts of the layout, but added my personal fonts and color, and adjusted quite a lot of things to fit the theme I am going for. I followed another tutorial for the home page too, to figure out how scrollable view of cards could be achieved, and how a navigation bar could be made, but I also adjusted it a lot to fit my theme. 
+
 ### Success criteria 1: Log in/Sign up
 Classes ```LoginScreen``` and ```SignupScreen``` are responsible for the log in and sign up systems. Both classes have a similar function that resets the text fields, as shown below, so that the previous user's information would not be on there when a new user attempts to sign up or log in to improve security and privacy.
 
@@ -344,9 +347,85 @@ class DatabaseManager:
                 halign: "center"
                 on_press: root.switch_to_signup()
 ```
-(Kivymd code)
+(MyApp.kv)
+
+For signup, there are more checks, which are pretty self explanatory looking at the comments. When all coniditions are met, the user's information is added to the user table and the user is then led to the log in page to log in with their newly created account. 
+```.py
+    def switch_to_login(self):
+        self.parent.current = "LoginScreen"
+
+    def try_register(self):
+        username = self.ids.signup_name.text
+        email = self.ids.signup_email.text
+        pw1 = self.ids.pw1.text
+        pw2 = self.ids.pw2.text
+
+        # 3/ check if the field is not empty
+        if username == "" or pw1 == "" or pw2 == "" or email == "":
+            # self.ids.signup_name.error = True
+            self.ids.signup_name.helper_text = "all information needs to be fill out"
+        else:
+            self.ids.signup_name.helper_text = ""
+            #validation
+            #1/ is user and password unique?
+            check1_query = f"SELECT * from user where username = '{username}' or email = '{email}'"
+            db =  DatabaseManager(name="login.sql")
+            results = db.search(query=check1_query)
+            db.close()
+
+
+            if len(results)>0:
+                #user or email already used
+                # self.ids.signup_name.error = True
+                self.ids.signup_name.helper_text = "username or email already in use"
+                return
+            else:
+                self.ids.signup_name.helper_text = ""
+
+            if " " in username:
+                #user or email already used
+                # self.ids.signup_name.error = True
+                self.ids.signup_name.helper_text = "username cannot contain spaces"
+                return
+            else:
+                self.ids.signup_name.helper_text = ""
+
+            # 4/ check if email has the @ mark
+            if "@" not in email or "." not in email:
+                # self.ids.signup_name.error = True
+                self.ids.signup_email.helper_text = "email is not in correct format. please check again"
+                return
+            else:
+                self.ids.signup_email.helper_text = ""
+
+            #2/does password match?
+            if pw1 != pw2:
+                # self.ids.signup_password.error = True
+                self.ids.pw2.helper_text = "passwords don't align. please check again"
+                return
+            else:
+                self.ids.pw2.helper_text = ""
+
+
+
+            hashed_pw = encrypt_password(pw1)
+            db1 = sqlite3.connect("login.sql")
+            c = db1.cursor()
+            insert_query = "INSERT INTO user (username, email, password) VALUES (?,?,?)"
+            c.execute(insert_query, (username, email, hashed_pw))
+            db1.commit()
+            c.close()
+
+            self.parent.current = "LoginScreen"
+```
+(MyApp.py)
+
+### Success criteria 2 & 3: displaying products and individual product details. 
+The home screen shows all the products in cards in a scrollable view. It contains
+
 
 ---
+Coded using the language Python. 
 Chatgpt has been used for debugging purposes in this project. (https://chatgpt.com/)
 
 Product information and image credits to https://www.pinoys.eu/, specifically:

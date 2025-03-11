@@ -166,5 +166,6 @@ Product information and image credits to https://www.pinoys.eu/, specifically:
 ## Criterion D: Functionality
 
 ## Appendix
-![image](https://github.com/user-attachments/assets/035375f0-83b7-4e5f-afcf-904f9271e147)
-Screenshot of the transcript of the interview. Document could be accessed here: https://docs.google.com/document/d/13I5UP34eFG2Ku2RaJQjZK8SNfTHSezlCicRTwNSn8mU/edit?tab=t.0
+![image](https://github.com/user-attachments/assets/afb1ad85-ddfc-4e63-8efe-75b9ac3f4201)
+
+Screenshot of the transcript of the interview with the client. Document could be accessed here: https://docs.google.com/document/d/13I5UP34eFG2Ku2RaJQjZK8SNfTHSezlCicRTwNSn8mU/edit?tab=t.0

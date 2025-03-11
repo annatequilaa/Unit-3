@@ -26,7 +26,7 @@ _*see evidence of consultation in the Appendix_
 2. The application showcases all the products prepopulated in the main page clearly with an option for the items to be selected by clicking on the image
     - [Issue tackled: “she wishes to implement some sort of online platform that showcases all the products and allows students to order them by selecting them”]
 
-3. Once a product is selected, a new window opens with a detailed description (allergens, ingredients) and picture of the product, with the option to add it to their cart. 
+3. Once a product is selected, a new window opens with a detailed description (allergens, ingredients, restrictions, country of origin) and picture of the product, with the option to add it to their cart. 
     - [Issue tackled: “Another problem is that some students have dietary restrictions such as halal or vegetarian, therefore the founder would like students to have access to the detailed information on each product”]
 
 4. The application allows users to save the product to cart to confirm order for later, and upon clicking the cart icon, a page would showcase the total cost of the order with a confirm button that confirms the order.
@@ -105,7 +105,7 @@ none for now
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1. The application includes a log-in/registration system to identify students.                                                                                                                                            | Check whether the log in/sign up system works properly                             | 1. Run the application. <br>2. Press "Log in" button without inputting anything into any text fields on the screen.  <br>3. Input "jinx" in the username field and "4rc4n3" as password and press "Log in" button. <br>4. Press "Don't have an account? Sign up here" and click "Sign up" button without inputting anything into any text fields on the screen. <br>5. Input "user{a number of your choice}" in the username field and "{that number of your choice}" in the email field, and input 123123 in the create password field, and 123123 in the confirm password field. Press the "Sign up" button. <br>6. Change the input in the email field to "{that number of your choice}@gmail.com", and change the input in the create password field to 321321. Press the "Sign up" button. <br>7. Change the input in the create password field to 123123, then change the input in the email field to "hehehehaw@gmail.com". Press the "Sign up" button.<br>8. Change the input in the email field back to "{that number of your choice}@gmail.com". Press the "Sign up" button. <br>9. Input "user{that number of your choice}" in the username field and 123123 in the password field. Press the "Log in" button. <br>10. On the bottom of the home screen, click the icon with the text "Profile". <br>11. On the profile page, click the button "Log out". | 1. A phone sized screen appears, showing a log in page. <br>2. Red hint texts under each text fields appear, showing text "please enter a username"/"please enter a password". <br>3. Red hint text under the username field appears showing text "invalid username or password". <br>4. User is redirected to the sign up interface then red hint text under the username field appears showing text "all information needs to be filled out". <br>5. Red hint text under the email field appears showing text "email is not in correct format. please check again". <br>6. Red hint text under the password confirmation field appears showing text "passwords don't align. please check again". <br>7. Red hint text under the username field appears showing text "username or email already in use". <br>8. User is redirected back to the log in page with the text fields cleared. <br>9. User is redirected to the home page. <br>10. User is redirected to the profile page with the text "Hello {current user's username}". <br>11. User is redirected back to the log  in page with the text fields cleared.                                                                                                                                                                                                                                                                                                                                                            |
 | 2. The application showcases all the products prepopulated in the main page clearly with an option for the items to be selected by clicking on the image                                                                  | Check whether products are shown on the main page                                  | 1. Continue from success criteria 1's test, enter "Antek" in the username field, and "000000" in the password field. Press the "Log in" button.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | 1. User is redirected to home page, which has a scrollable view of cards containing the product's image, name, and price.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| 3. Once a product is selected, a new window opens with a detailed description (allergens, ingredients) and picture of the product, with the option to add it to their cart.                                               | Check whether product information could be shown according to the product selected | 1. Continue from success criteria 2's test, click on one random product card. <br>2. Click the "Back" button on the screen.<br>3. Click on another product.<br>4. Click the "Back" button on the screen                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 1. User is redirected to the product detail page of that product, with it's image, price, name, ingredients, allergens, dietary restrctions, and coutnry of origin shown on the screen. There are two buttons, one to go back to the home page, the other to add the item to the user's cart. <br>2. User is redirected back to the home page. <br>3. User is redirected to the product detail page of that product, with it's image, price, name, ingredients, allergens, dietary restrctions, and coutnry of origin shown on the screen. (The information on the page should be different that that of 1.) There are two buttons, one to go back to the home page, the other to add the item to the user's cart.<br>4. User is redirected back to the home page.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 3. Once a product is selected, a new window opens with a detailed description (allergens, ingredients, restrictions, country of origin) and picture of the product, with the option to add it to their cart.                                               | Check whether product information could be shown according to the product selected | 1. Continue from success criteria 2's test, click on one random product card. <br>2. Click the "Back" button on the screen.<br>3. Click on another product.<br>4. Click the "Back" button on the screen                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 1. User is redirected to the product detail page of that product, with it's image, price, name, ingredients, allergens, dietary restrctions, and coutnry of origin shown on the screen. There are two buttons, one to go back to the home page, the other to add the item to the user's cart. <br>2. User is redirected back to the home page. <br>3. User is redirected to the product detail page of that product, with it's image, price, name, ingredients, allergens, dietary restrctions, and coutnry of origin shown on the screen. (The information on the page should be different that that of 1.) There are two buttons, one to go back to the home page, the other to add the item to the user's cart.<br>4. User is redirected back to the home page.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | 4. The application allows users to save the product to cart to confirm order for later, and upon clicking the cart icon, a page would showcase the total cost of the order with a confirm button that confirms the order. | Check whether the cart and order system functions properly                         | 1. Continue from success criteria 3's test, click on the product card named "Lao Gan Ma Chili Oil".<br>2. Press the "Add to your cart" button. <br>3. Click "Close" on the pop up dialogue.<br>4. Click the cart icon on the navigation bar. <br>5. Click home icon on the navigation bar and then click on the product card named "Peanut Mochi". <br>6. Press the "Add to your cart" button. <br>7. Click "Close" on the pop up dialogue.<br>8. Click the cart icon on the navigation bar.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | 1. User is redirected to the product detail page of the chili oil, with it's image, price, name, ingredients, allergens, dietary restrctions, and coutnry of origin shown on the screen. There are two buttons, one to go back to the home page, the other to add the item to the user's cart.<br>2. A pop up dialogue shows up with the message informing the user that the item has been added to their cart with a "Close" button. <br>3. User is redirected back to the home page. <br>4. User is redirected to the cart page, and the chili oil's name "Lao Gan Ma Chili Oil" and price (795) appears in the scrollable view on the page. The total amount text shows 795. <br>5. User is redirected to the product detail page of the peanut mochi, with it's image, price, name, ingredients, allergens, dietary restrctions, and coutnry of origin shown on the screen. There are two buttons, one to go back to the home page, the other to add the item to the user's cart.<br>6. A pop up dialogue shows up with the message informing the user that the item has been added to their cart with a "Close" button.<br>7. User is redirected back to the home page.<br>8. User is redirected to the cart page, and the peanut mochi's name "Peanut Mochi" and price (565) appears in the scrollable view on the page under the chili oil. The total amount text shows 1360 (975+565).<br>9. The chili oil disappears from the list on the page, and the total is now 565. |
 | 5. When the package is ordered, a pop up notification would appear on the screen of the user to inform them of the estimated arrival time.                                                                                | Check whether the product order confirm function works properly                    | 1. Continue from success criteria 4's test, click the "confirm" button.<br>2. Click the "Close" on the pop up dialogue. <br>3. Click the cart item on the navigation bar.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 1. A pop up dialogue shows up with the message informing the user that their order has been confirmed, and that it will arrive in {a random number between 2 and 12} days. <br>2. User is redirected back to the home page.<br>3. User is redirected to the cart page and the total is 0 and there are no items on the page.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
@@ -421,8 +421,203 @@ For signup, there are more checks, which are pretty self explanatory looking at 
 (MyApp.py)
 
 ### Success criteria 2 & 3: displaying products and individual product details. 
-The home screen shows all the products in cards in a scrollable view. It contains
+The home screen shows all the products in cards in a scrollable view. The class HomeScreen contains a function for the card in the scrollable view: when the card is clicked on, the prd_id (product id) of it is passed onto the ProductDetails class to retrieve information from the database using the prd_id, displaying the detailed information (country of origin, ingredients... etc.) of the product in the product details page. 
+```.py
+class HomeScreen(Screen):
 
+    def goto_product(self, image, p_name, price,prd_id):
+        product_screen = self.parent.get_screen("ProductDetail")
+        product_screen.image = image
+        product_screen.p_name = p_name
+        product_screen.price = price
+        product_screen.prd_id = prd_id
+        self.parent.current = "ProductDetail"
+```
+This function passes the image, product name, price, and product id to ProductDetail, the page that shows the detailed information of the products. This means that I don't need to create a separate detail page for each product, instead, i could just create one, and substitute the values of different products into it .
+
+```.kv
+<HomeScreen>:
+    MDBoxLayout:
+        padding: 30
+        spacing: 10
+        orientation: "vertical"
+        md_bg_color: "#e2c8ad"
+        MDBoxLayout:
+            size_hint_y: 0.3
+            md_bg_color: "#e2c8ad"
+            AnchorLayout:
+                anchor_y: "top"
+                anchor_x: "center"
+                FitImage:
+                    source: "logo-clear.png"
+                    size_hint_y: 0.9
+                    size_hint_x: 0.8
+
+
+
+        ScrollView:
+            MDGridLayout:
+                cols: 2
+                spacing: 40
+                padding: 5
+                size_hint_y: None
+                height: self.minimum_height
+                adaptive_height: True
+                ProductCard:
+                    prd_id: "cake"
+                    image: "products/cake.png"
+                    price: "325¥"
+                    p_name: "Taiwanese Style Cake"
+
+                ProductCard:
+                    prd_id: "mochi"
+                    image: "products/mochi.png"
+                    price: "565¥"
+                    p_name: "Peanut Mochi"
+
+                ProductCard:
+                    prd_id: "pho"
+                    image: "products/pho.png"
+                    price: "260¥"
+                    p_name: "Instant Pho Beef Flavor"
+
+                ProductCard:
+                    prd_id: "laoganma"
+                    image: "products/laoganma.png"
+                    price: "795¥"
+                    p_name: "Lao Gan Ma Chili Oil"
+
+
+                ProductCard:
+                    prd_id: "shinramyun"
+                    image: "products/shinramyun.png"
+                    price: "260¥"
+                    p_name: "Shin Ramyun (spicy)"
+
+                ProductCard:
+                    prd_id: "ricecake"
+                    image: "products/ricecake.png"
+                    price: "860¥"
+                    p_name: "Tteokbokki Rice Cake"
+
+
+
+                ProductCard:
+                    prd_id: "cracker"
+                    image: "products/cracker.png"
+                    price: "565¥"
+                    p_name: "Cracker Fita"
+
+                ProductCard:
+                    prd_id: "pudding"
+                    image: "products/pudding.png"
+                    price: "795¥"
+                    p_name: "Lychee Pudding"
+
+
+        MDBoxLayout:
+            size_hint_y: None
+            md_bg_color: "#e2c8ad"
+            height: 80
+            padding: [0,0,9,2]
+            spacing: 50
+            MDBoxLayout:
+                orientation: "vertical"
+                MDIconButton:
+                    pos_hint: {"center_x": .5, "center_y": .5}
+                    icon: "home"
+
+                    theme_text_color: "Custom"
+                    text_color: app.theme_cls.primary_color
+
+                MDLabel:
+                    text: "Home"
+                    valign: "center"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    font_size: 20
+                    text_color: app.theme_cls.primary_color
+            MDBoxLayout:
+                orientation: "vertical"
+                MDIconButton:
+                    pos_hint: {"center_x": .5, "center_y": .5}
+                    icon: "cart"
+                    color: "#392a25"
+                    on_release: app.root.current = "CartScreen"
+                MDLabel:
+                    text: "Cart"
+                    valign: "center"
+                    halign: "center"
+                    font_size: 20
+                    text_color: "#392a25"
+            MDBoxLayout:
+                orientation: "vertical"
+                MDIconButton:
+                    pos_hint: {"center_x": .5, "center_y": .5}
+                    icon: "account"
+                    color: "#392a25"
+                    on_release: app.root.current = "ProfileScreen"
+                MDLabel:
+                    text: "Profile"
+                    valign: "center"
+                    halign: "center"
+                    font_size: 20
+                    text_color: "#392a25"
+```
+The cards are another class, which is ProductCards and it's a subclass of MDCard, as shown below:
+```.kv
+<ProductCard@MDCard>:
+    image: ""
+    p_name: ""
+    price: ""
+    prd_id: ""
+    padding: 10
+    orientation: "vertical"
+    size_hint_x: .5
+    on_release: app.root.get_screen("HomeScreen").goto_product(root.image,root.p_name,root.price, root.prd_id)
+    size_hint_y: None
+    height: 240
+    md_bg_color: "#f8e2ca"
+
+    canvas.before:
+        Color:
+            rgba: (0.414, 0.340, 0.313, 1)  #rgba of #6a5750 (i'm rly glad i made the chrome extension)
+        Line:
+            width: 3
+            rounded_rectangle: (self.x, self.y, self.width, self.height, 30)
+
+    
+
+    BoxLayout:
+        orientation: "vertical"
+        size_hint_y: 0.55
+        Image:
+            source: root.image
+            size_hint_y: 1
+    BoxLayout:
+        size_hint_y: 0.1
+    BoxLayout:
+        orientation: "vertical"
+        size_hint_y: 0.35
+        padding: 5
+        spacing: 2
+
+        MDLabel:
+            text_color: "#6a5750"
+            font_name: "Lora.ttf"
+            text: root.p_name
+            font_size: "14sp"
+            size_hint_y: None
+            height: self.texture_size[1]
+
+        MDLabel:
+            text_color: "#6a5750"
+            text: root.price
+            font_size: "10sp"
+            size_hint_y: None
+            height: self.texture_size[1]
+```
+Having this simplifies the code for creating a new product on the scrollView in the home page. 
 
 ---
 Coded using the language Python. 

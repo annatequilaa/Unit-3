@@ -19,7 +19,7 @@ _*see evidence of consultation in the Appendix_
 ### Proposed Solution
 
 
-### Success Criteria (Be more specific than this, more specific = better)
+### Success Criteria
 1. The application includes a log-in/registration system to identify students. 
     - [Issue tackled: “students in this school often mistaken other students’ packages as theirs, and some even take others’ deliveries on purpose”, “but it would be better if the identification process is more secure”]
 

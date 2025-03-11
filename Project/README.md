@@ -602,11 +602,19 @@ After that, when going into the cart screen (CartScreen), items in the order are
 ```
 MyApp.py
 ```.kv
+     ScrollView:
+                size_hint: 0.8, 0.55
+                pos_hint: {"center_x": 0.5, "center_y": 0.5}
 
+                MDList:
+                    id: cart_items
 ```
 MyApp.kv
 
-When the delete icon on the side of an item is clicked
+When the delete icon on the side of an item is clicked, the item would be removed from the cart order, and the total cost at the bottom of the page would decrease accordingly. This is also because of the database:
+```.py
+
+```
 
 ---
 Coded using the language Python. 

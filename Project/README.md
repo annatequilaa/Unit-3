@@ -17,7 +17,7 @@ _*see evidence of consultation in the Appendix_
 
 
 ### Proposed Solution
-
+Python, a higher level and interpreted programming language is selected as this project's main programming language. This is because Python has a huge selection of third party modules and library, my other tool kivymd being one of them. 
 
 ### Success Criteria
 1. The application includes a log-in/registration system to identify students. 

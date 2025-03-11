@@ -436,25 +436,6 @@ class HomeScreen(Screen):
 This function passes the image, product name, price, and product id to ProductDetail, the page that shows the detailed information of the products. This means that I don't need to create a separate detail page for each product, instead, i could just create one, and substitute the values of different products into it .
 
 ```.kv
-<HomeScreen>:
-    MDBoxLayout:
-        padding: 30
-        spacing: 10
-        orientation: "vertical"
-        md_bg_color: "#e2c8ad"
-        MDBoxLayout:
-            size_hint_y: 0.3
-            md_bg_color: "#e2c8ad"
-            AnchorLayout:
-                anchor_y: "top"
-                anchor_x: "center"
-                FitImage:
-                    source: "logo-clear.png"
-                    size_hint_y: 0.9
-                    size_hint_x: 0.8
-
-
-
         ScrollView:
             MDGridLayout:
                 cols: 2
@@ -513,58 +494,8 @@ This function passes the image, product name, price, and product id to ProductDe
                     image: "products/pudding.png"
                     price: "795¥"
                     p_name: "Lychee Pudding"
-
-
-        MDBoxLayout:
-            size_hint_y: None
-            md_bg_color: "#e2c8ad"
-            height: 80
-            padding: [0,0,9,2]
-            spacing: 50
-            MDBoxLayout:
-                orientation: "vertical"
-                MDIconButton:
-                    pos_hint: {"center_x": .5, "center_y": .5}
-                    icon: "home"
-
-                    theme_text_color: "Custom"
-                    text_color: app.theme_cls.primary_color
-
-                MDLabel:
-                    text: "Home"
-                    valign: "center"
-                    halign: "center"
-                    theme_text_color: "Custom"
-                    font_size: 20
-                    text_color: app.theme_cls.primary_color
-            MDBoxLayout:
-                orientation: "vertical"
-                MDIconButton:
-                    pos_hint: {"center_x": .5, "center_y": .5}
-                    icon: "cart"
-                    color: "#392a25"
-                    on_release: app.root.current = "CartScreen"
-                MDLabel:
-                    text: "Cart"
-                    valign: "center"
-                    halign: "center"
-                    font_size: 20
-                    text_color: "#392a25"
-            MDBoxLayout:
-                orientation: "vertical"
-                MDIconButton:
-                    pos_hint: {"center_x": .5, "center_y": .5}
-                    icon: "account"
-                    color: "#392a25"
-                    on_release: app.root.current = "ProfileScreen"
-                MDLabel:
-                    text: "Profile"
-                    valign: "center"
-                    halign: "center"
-                    font_size: 20
-                    text_color: "#392a25"
 ```
-The cards are another class, which is ProductCards and it's a subclass of MDCard, as shown below:
+The cards contained in the scroll view are another class, which is ProductCards and it's a subclass of MDCard, as shown below:
 ```.kv
 <ProductCard@MDCard>:
     image: ""
@@ -618,6 +549,11 @@ The cards are another class, which is ProductCards and it's a subclass of MDCard
             height: self.texture_size[1]
 ```
 Having this simplifies the code for creating a new product on the scrollView in the home page. 
+
+
+### Success criteria 4 & 5: cart functions ad confirmation
+On the product detail page, there's the button "add to your cart" which allows the user to add a product to their cart. 
+
 
 ---
 Coded using the language Python. 

@@ -152,6 +152,8 @@ none for now
 - passlib
 - random
 
+Chatgpt has been used for debugging purposes in this project. 
+
 Product information and image credits to https://www.pinoys.eu/, specifically:
 - https://www.pinoys.eu/tl/p/instant-pho-bo-rice-noodle-soup-beef-flavour-60-g-vifon#
 - https://www.pinoys.eu/tl/p/crispy-onions-in-chili-oil-210-g-lao-gan-ma#

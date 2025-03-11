@@ -625,17 +625,16 @@ Product information and image credits to https://www.pinoys.eu/, specifically:
 Screenshot of the transcript of the interview with the client. Document could be accessed here: https://docs.google.com/document/d/13I5UP34eFG2Ku2RaJQjZK8SNfTHSezlCicRTwNSn8mU/edit?tab=t.0
 
 
-Works Cited
-[fn1]“3.9.13 Documentation.” Docs.python.org, 2001, docs.python.org/3.9/. Accessed 11 Mar. 2025.
+[^1]: “3.9.13 Documentation.” Docs.python.org, 2001, docs.python.org/3.9/. Accessed 11 Mar. 2025.
 
-[fn2]“Benefits of SQLite as a File Format.” Www.sqlite.org, www.sqlite.org/aff_short.html. Accessed 12 Mar. 2025.
+[^2]: “Benefits of SQLite as a File Format.” Www.sqlite.org, www.sqlite.org/aff_short.html. Accessed 12 Mar. 2025.
 
-[fn3]GeeksforGeeks. “Python Language Advantages and Applications - GeeksforGeeks.” GeeksforGeeks, 23 Oct. 2017, www.geeksforgeeks.org/python-language-advantages-applications/. Accessed 12 Mar. 2025.
+[^3]: GeeksforGeeks. “Python Language Advantages and Applications - GeeksforGeeks.” GeeksforGeeks, 23 Oct. 2017, www.geeksforgeeks.org/python-language-advantages-applications/. Accessed 12 Mar. 2025.
 
-[fn4]HusamFathi. “Kivy and KivyMD Online Shop UI Speed Code.” YouTube, 10 July 2021, youtu.be/ADfGpvObM4g?si=J_I0bXjlCy_2kGVR. Accessed 2 Mar. 2025.
+[^4]: HusamFathi. “Kivy and KivyMD Online Shop UI Speed Code.” YouTube, 10 July 2021, youtu.be/ADfGpvObM4g?si=J_I0bXjlCy_2kGVR. Accessed 2 Mar. 2025.
 
-[fn5]Rodrígue, Andrés, et al. “KivyMD 1.1.1 Documentation.” Kivymd.readthedocs.io, 2022, kivymd.readthedocs.io/en/1.1.1/. Accessed 11 Mar. 2025.
+[^5]: Rodrígue, Andrés, et al. “KivyMD 1.1.1 Documentation.” Kivymd.readthedocs.io, 2022, kivymd.readthedocs.io/en/1.1.1/. Accessed 11 Mar. 2025.
 
-[fn6]SB Developer. “How to Create Login Form with Splash Screen Using KivyMD | Durar Portal LLC | Login Page.” YouTube, 24 July 2021, youtu.be/f2VVEcN4CU4?si=DHQjInZ6GuFCMtrL. Accessed 27 Feb. 2025.
+[^6]: SB Developer. “How to Create Login Form with Splash Screen Using KivyMD | Durar Portal LLC | Login Page.” YouTube, 24 July 2021, youtu.be/f2VVEcN4CU4?si=DHQjInZ6GuFCMtrL. Accessed 27 Feb. 2025.
 
-[fn6]“Why Use a Database? - Information Handling Software - GCSE ICT Revision - WJEC.” BBC Bitesize, www.bbc.co.uk/bitesize/guides/znvyt39/revision/4. Accessed 12 Mar. 2025.
+[^7]: “Why Use a Database? - Information Handling Software - GCSE ICT Revision - WJEC.” BBC Bitesize, www.bbc.co.uk/bitesize/guides/znvyt39/revision/4. Accessed 12 Mar. 2025.

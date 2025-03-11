@@ -57,8 +57,9 @@ _*see evidence of consultation in the Appendix_
 **Fig. 3** This is the flow diagram for load_cart_items() which displays all the items in the cart of a user
 
 
+![flowchart3 drawio](https://github.com/user-attachments/assets/50cfb862-1723-4c94-9cfc-ecbd2ede3be2)
 
-**Fig. 4** This is the flow diagram 
+**Fig. 4** This is the flow diagram for confirm() which confirms the order and shows in how many days the product would arrive
 
 ### UML Diagram (Object Oriented Programming)
 

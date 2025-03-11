@@ -52,8 +52,9 @@ _*see evidence of consultation in the Appendix_
 **Fig. 2** This is the flow diagram for try_login() which attempts log in for the information entered in the text field
 
 
+![flowchart2 drawio](https://github.com/user-attachments/assets/5663e568-6449-40c5-81ac-2214a9482856)
 
-**Fig. 3** This is the flow diagram 
+**Fig. 3** This is the flow diagram for load_cart_items() which displays all the items in the cart of a user
 
 
 

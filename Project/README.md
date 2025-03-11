@@ -158,7 +158,7 @@ none for now
 ### Packages used
 - SQLite3
 - kivy
-- kivymd
+- kivymd [^5]
 - passlib
 - random
 
@@ -611,13 +611,33 @@ MyApp.py
 ```
 MyApp.kv
 
-When the delete icon on the side of an item is clicked, the item would be removed from the cart order, and the total cost at the bottom of the page would decrease accordingly. This is also because of the database:
+When the delete icon on the side of an item is clicked, the item would be removed from the cart order, and the total cost at the bottom of the page would decrease accordingly. This is also because I use sqlite3 to interact with database and remove the item from the table cart_orders:
 ```.py
+def remove_item(self, button):
+        item_name = button.item_name
+        price = button.price
+        item_card = button.parent_item
 
+        db = sqlite3.connect("login.sql")
+        c = db.cursor()
+        c.execute("DELETE FROM cart_orders WHERE name=(?) and username=(?)", (item_name,LoginScreen.current_user))
+        db.commit()
+        db.close()
+
+        self.ids.cart_items.remove_widget(item_card)
+        self.total = int(self.ids.total_price.text.split("¥")[1]) - price
+        self.update_total_price(self.total)
+
+    def update_total_price(self, total):
+        self.ids.total_price.text = f"Total: ¥{self.total}"
+```
+Lastly, when the confirm button is pressed, a pop up would appear and confirm the order. The cart would also be cleared, meaning that the total cost would also be cleared. However, only one user's cart should be cleared, not all, so that could be achieved with queries selecting items where username is equal to ```{LoginScreen.current_user}```
+
+```.py
 ```
 
 ---
-Coded using the language Python. 
+Coded using the language Python. [^1]
 Chatgpt has been used for debugging purposes in this project. (https://chatgpt.com/)
 
 Product information and image credits to https://www.pinoys.eu/, specifically:

@@ -38,6 +38,10 @@ _*see evidence of consultation in the Appendix_
 ## Criterion B: Design
 
 ### System Diagram
+![Untitled Diagrameqzx drawio](https://github.com/user-attachments/assets/74b033dc-6f2d-45fb-bdfe-e9e1a9ee54fc)
+
+
+**Fig. 1** This is the system diagram of the proposed solution. 
 
 
 ### Flow diagrams for algorithms

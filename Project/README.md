@@ -552,7 +552,52 @@ Having this simplifies the code for creating a new product on the scrollView in 
 
 
 ### Success criteria 4 & 5: cart functions ad confirmation
-On the product detail page, there's the button "add to your cart" which allows the user to add a product to their cart. 
+On the product detail page, there's the button "add to your cart" which allows the user to add a product to their cart by adding the product as an entry into the cart_orders table through SQLite. After that, a pop up would appear to confirm the item is added into the cart. 
+```.py
+def add_to_cart(self):
+        if not self.dialog:
+            self.dialog = MDDialog(
+                md_bg_color= "f8e2ca",
+                title="[color=#6a5750]Thank you![/color]",
+                text="[color=#6a5750]Item successfully added to your cart!\n\nRedirecting you back to the home page now. Enjoy your shopping![/color]",
+                buttons=[
+                    MDRaisedButton(
+                        text="[color=f8e2ca]Close[/color]",
+                        on_release=self.redirect_to_home
+                    )
+                ],
+            )
+        db1 = sqlite3.connect("login.sql")
+        c = db1.cursor()
+        insert_query = "INSERT INTO cart_orders (name, price, username) VALUES (?,?,?)"
+        c.execute(insert_query, (self.p_name, self.p_price, str(LoginScreen.current_user)))
+        db1.commit()
+        c.close()
+        self.dialog.open()
+
+    def redirect_to_home(self, *args):
+        self.dialog.dismiss()
+        self.parent.current = "HomeScreen"
+```
+After that, when going into the cart screen (CartScreen), items in the order are loaded using the load_cart_items() function, which selects all the products which has the attribute username with the value of the username of the current user. The names and prices are the information shown on the scroll view of list items. 
+```.py
+ def load_cart_items(self):
+        self.ids.cart_items.clear_widgets()
+
+        self.total = 0
+
+        conn = sqlite3.connect("login.sql")
+        cursor = conn.cursor()
+        cursor.execute(f"SELECT name, price FROM cart_orders where username = '{LoginScreen.current_user}'")
+        rows = cursor.fetchall()
+        conn.close()
+
+        for name, price in rows:
+            self.total += price
+            self.add_cart_item(name, price)
+
+        self.update_total_price(self.total)
+```
 
 
 ---
@@ -578,3 +623,19 @@ Product information and image credits to https://www.pinoys.eu/, specifically:
 ![image](https://github.com/user-attachments/assets/afb1ad85-ddfc-4e63-8efe-75b9ac3f4201)
 
 Screenshot of the transcript of the interview with the client. Document could be accessed here: https://docs.google.com/document/d/13I5UP34eFG2Ku2RaJQjZK8SNfTHSezlCicRTwNSn8mU/edit?tab=t.0
+
+
+Works Cited
+[fn1]“3.9.13 Documentation.” Docs.python.org, 2001, docs.python.org/3.9/. Accessed 11 Mar. 2025.
+
+[fn2]“Benefits of SQLite as a File Format.” Www.sqlite.org, www.sqlite.org/aff_short.html. Accessed 12 Mar. 2025.
+
+[fn3]GeeksforGeeks. “Python Language Advantages and Applications - GeeksforGeeks.” GeeksforGeeks, 23 Oct. 2017, www.geeksforgeeks.org/python-language-advantages-applications/. Accessed 12 Mar. 2025.
+
+[fn4]HusamFathi. “Kivy and KivyMD Online Shop UI Speed Code.” YouTube, 10 July 2021, youtu.be/ADfGpvObM4g?si=J_I0bXjlCy_2kGVR. Accessed 2 Mar. 2025.
+
+[fn5]Rodrígue, Andrés, et al. “KivyMD 1.1.1 Documentation.” Kivymd.readthedocs.io, 2022, kivymd.readthedocs.io/en/1.1.1/. Accessed 11 Mar. 2025.
+
+[fn6]SB Developer. “How to Create Login Form with Splash Screen Using KivyMD | Durar Portal LLC | Login Page.” YouTube, 24 July 2021, youtu.be/f2VVEcN4CU4?si=DHQjInZ6GuFCMtrL. Accessed 27 Feb. 2025.
+
+[fn6]“Why Use a Database? - Information Handling Software - GCSE ICT Revision - WJEC.” BBC Bitesize, www.bbc.co.uk/bitesize/guides/znvyt39/revision/4. Accessed 12 Mar. 2025.

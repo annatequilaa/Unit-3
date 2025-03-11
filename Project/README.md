@@ -634,7 +634,27 @@ def remove_item(self, button):
 Lastly, when the confirm button is pressed, a pop up would appear and confirm the order. The cart would also be cleared, meaning that the total cost would also be cleared. However, only one user's cart should be cleared, not all, so that could be achieved with queries selecting items where username is equal to ```{LoginScreen.current_user}```
 
 ```.py
+def confirm(self):
+        if self.total != 0:
+            db = sqlite3.connect("login.sql")
+            c = db.cursor()
+            c.execute("DELETE FROM cart_orders WHERE price>0 and username=(?)", (LoginScreen.current_user,))
+            db.commit()
+            db.close()
+            arrival_days = random_days()
+            self.dialog = MDDialog(
+                    md_bg_color="f8e2ca",
+                    title="[color=#6a5750]Thank you![/color]",
+                    text=f"[color=#6a5750]Your order has been confirmed. Please pay on the arrival of the item. Item will arrive in {arrival_days} days. \n\nRedirecting you back to the home page now. Enjoy your shopping![/color]",
+                    buttons=[
+                        MDRaisedButton(
+                            text="[color=f8e2ca]Close[/color]",
+                            on_release=self.go_home
+                        )
+                    ],
+                )
 ```
+This also prevents someone from confirming their order when there's nothing in their cart. 
 
 ---
 Coded using the language Python. [^1]

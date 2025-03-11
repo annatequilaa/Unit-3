@@ -17,7 +17,9 @@ _*see evidence of consultation in the Appendix_
 
 
 ### Proposed Solution
-I have chosen to use Python to create a GUI with kivymd and SQLite due to many reasons. Python is a high-level, interpreted programming language known for its simplicity, readability, and easiness to use. One of Python's strongest features is it's third-party libraries[^3] and frameworks. For this project, I selected kivymd as it is very similar to Google’s Material Design spec as the goal of this framework is to be the easier to use version of Google's Material Design. [^5]
+I have chosen to use Python to create a GUI with kivymd and SQLite due to many reasons. Python is a high-level, interpreted programming language known for its simplicity, readability, and easiness to use. One of Python's strongest features is it's third-party libraries[^3] and frameworks. For this project, I selected kivymd as it is very similar to Google’s Material Design spec as the goal of this framework is to be the easier to use version of Google's Material Design[^5]. Because of the choice of using kivymd, there are a lot of built in widgets and elements that aesthetically pleasing. Moreover, kivymd could potentially be ran on an Android or iOS platform, creating flexibility for future deployments. 
+
+Furthermore, using a database in an application like this would bring much benefits. It is very easy and fast to find specfic information using the query, and data can be imported into other applications if a database is used. [^7] In this project,Python is combined with SQLite in this project due to their compatibility. SQLite is a lightweight, serverless, and self-contained database engine, which makes it suitable for local data storage as they take up little space[^2].
 
 ### Success Criteria
 1. The application includes a log-in/registration system to identify students. 
@@ -598,7 +600,13 @@ After that, when going into the cart screen (CartScreen), items in the order are
 
         self.update_total_price(self.total)
 ```
+MyApp.py
+```.kv
 
+```
+MyApp.kv
+
+When the delete icon on the side of an item is clicked
 
 ---
 Coded using the language Python. 

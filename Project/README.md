@@ -17,7 +17,7 @@ _*see evidence of consultation in the Appendix_
 
 
 ### Proposed Solution
-Python, a higher level and interpreted programming language is selected as this project's main programming language. This is because Python has a huge selection of third party modules and library, my other tool kivymd being one of them. 
+I have chosen to use Python to create a GUI with kivymd and SQLite due to many reasons. Python is a high-level, interpreted programming language known for its simplicity, readability, and easiness to use. One of Python's strongest features is it's third-party libraries[^3] and frameworks. For this project, I selected kivymd as it is very similar to Google’s Material Design spec as the goal of this framework is to be the easier to use version of Google's Material Design. [^5]
 
 ### Success Criteria
 1. The application includes a log-in/registration system to identify students. 

@@ -146,15 +146,15 @@ none for now
 ## Criterion C: Development
 
 ### Techniques used
-- **If/else conditions statements**: 
-- **For loops**: 
+- **If/else conditions statements**: Used to control actions based on certain conditions, for example in this application, validate user inputs and login credentials. 
+- **For loops**: Used to iterate through items in the database. 
 - **Functions**: Used to organize my code into reusable and callable blocks, which makes the code more organized and easier to debug and alter. Example functions in this application: add_to_cart(), try_register(). 
-- **Classes (OOP)**: 
-- **Hashing**: 
-- **Databases**: 
+- **Classes (OOP)**: Used to structure the application, for example, the different screens (HomeScreen, CartScreen, etc.) in this application.
+- **Hashing**: Used to store password securely in a database. 
+- **Databases**: Allows data to be saved and retrieved when required. Used to store user information, product information, etc.
 
 ### Packages used
-- sqlite3
+- SQLite3
 - kivy
 - kivymd
 - passlib

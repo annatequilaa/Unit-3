@@ -673,7 +673,7 @@ Product information and image credits to https://www.pinoys.eu/, specifically:
 (images processed by Ann Tsai using Microsoft Photos application and https://www.remove.bg/)
 
 ## Criterion D: Functionality
-Video too big to upload, will upload to google drive and attach link later. Video.mp4 is uploaded in the same folder here though.
+Video too big to upload directly to markdown file, so here's the google drive link: https://drive.google.com/file/d/1Qq90mxiF-FJBliXu_HrL3q5i114_p1IT/view?usp=sharing
 
 ## Appendix
 ![image](https://github.com/user-attachments/assets/afb1ad85-ddfc-4e63-8efe-75b9ac3f4201)

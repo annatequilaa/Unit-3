@@ -37,6 +37,10 @@ Furthermore, using a database in an application like this would bring much benef
 5. When the package is ordered, a pop up notification would appear on the screen of the user to inform them of the estimated arrival time.  
     - [Issue tackled: “Moreover, the students would need to be notified when packages are delivered because food has a short expiry date.”]
 
+
+
+
+**What I changed:** I removed the testing data from the database screenshot in this section. 
 ## Criterion B: Design
 
 ### System Diagram
@@ -83,9 +87,9 @@ The database is named login.sql by accident, and due to issues with Pycharm's se
 
 
 
-![image](https://github.com/user-attachments/assets/e856ec6b-bdfb-4b19-96a8-46320469c251)
+![image](https://github.com/user-attachments/assets/bd8585a7-c0ce-4053-a884-2e2e55f4b1da)
 
-**Fig.8** table "user" in login.sql in the database (the first row was a debugging result)
+**Fig.8** table "user" in login.sql in the database
 
 
 
@@ -145,16 +149,14 @@ none for now
 
 
 
-
+**What I changed:** I changed this section to be in first person. I removed the redundant parts. However, I didn't have enough time to finish talking about everything I want to. 
 ## Criterion C: Development
 
 ### Techniques used
-- **If/else conditions statements**: Used to control actions based on certain conditions, for example in this application, validate user inputs and login credentials. 
-- **For loops**: Used to iterate through items in the database. 
-- **Functions**: Used to organize my code into reusable and callable blocks, which makes the code more organized and easier to debug and alter. Example functions in this application: add_to_cart(), try_register(). 
-- **Classes (OOP)**: Used to structure the application, for example, the different screens (HomeScreen, CartScreen, etc.) in this application.
-- **Hashing**: Used to store password securely in a database by encrypting it. 
-- **Databases**: Allows data to be saved and retrieved when required. Used to store user information, product information, etc.
+- **Object-Oriented Programming (OOP)**: I used classes to structure the application, for example, the different screens (HomeScreen, CartScreen, etc.) in this application, and the product cards.
+- **Front end/User Interface (UI) programming**: I used kivymd to develop the front end of this application which allows the user to interact with this application. For example, the buttons that allow user to log-in, sign-up and add items to their carts. 
+- **Hashing**: I used this to store password securely in a database by encrypting it. 
+- **Interacting with Databases**: I used SQLite to interact with databses, and this allows data to be saved and retrieved when required. Used to store user information, product information, etc.
 
 ### Packages used
 - SQLite3
@@ -163,9 +165,90 @@ none for now
 - passlib
 - random
 
-### User Interface
-I didn't really know how to approach UI design using kivymd at first, because it has so many elements that I didn't know. I was struggling to create a scrollable page, and also mainly positioning things properly on a Screen class object. Hence, I decided to follow tutorials and learn as I observe how others do it. For the log-in and sign up page, I followed a tutorial[^6] for some parts of the layout, but added my personal fonts and color, and adjusted quite a lot of things to fit the theme I am going for. I followed another tutorial[^4] for the home page too, to figure out how scrollable view of cards could be achieved, and how a navigation bar could be made, but I also adjusted it a lot to fit my theme. After watch
+### User Interface Programming
+I didn't really know how to approach UI design using kivymd at first, because it has so many elements that I didn't know. I was struggling to create a scrollable page, and also mainly positioning things properly on a Screen class object. Hence, I decided to follow tutorials and learn as I observe how others do it. For the log-in and sign up page, I followed a tutorial[^6] for some parts of the layout, but added my personal fonts and color, and adjusted quite a lot of things to fit the theme I am going for. I followed another tutorial[^4] for the home page too, to figure out how scrollable view of cards could be achieved, and how a navigation bar could be made, but I also adjusted it a lot to fit my theme. After watching it, I finally understood how scroll layouts work, and also I finally understand fully how to use ```pos_hint```. Below is an example:
+```.py
+MDBoxLayout:
+        padding: 30
+        spacing: 10
+        orientation: "vertical"
+        md_bg_color: "#e2c8ad"
+        MDBoxLayout:
+            size_hint_y: 0.3
+            md_bg_color: "#e2c8ad"
+            AnchorLayout:
+                anchor_y: "top"
+                anchor_x: "center"
+                FitImage:
+                    source: "logo-clear.png"
+                    size_hint_y: 0.9
+                    size_hint_x: 0.8
+```
+This code keeps the logo at the top using MDBoxLayout
 
+```.py
+ScrollView:
+            MDGridLayout:
+                cols: 2
+                spacing: 40
+                padding: 5
+                size_hint_y: None
+                height: self.minimum_height
+                adaptive_height: True
+                ProductCard:
+                    prd_id: "cake"
+                    image: "products/cake.png"
+                    price: "325¥"
+                    p_name: "Taiwanese Style Cake"
+```
+This code creates a scrollable view that contains other objects. 
+
+### Object Oriented Programming
+At first, I created 8 separate product detail pages (one for each product). However, I wanted my code to be more dynamic because I had too much code which made it hard to debug and when I wanted to make changes, I had to change every one of them from the 8. Hence, I decided to use OOP becuase I was reminded that I could create classes. Below is an example of how I used classes to update product details and create only one product detail page. 
+
+```.py
+class ProductDetail(Screen):
+    image = StringProperty("")
+    p_name = StringProperty("")
+    price = StringProperty("")
+    prd_id = StringProperty("")
+    p_price = 0
+    dialog = None
+
+    def update_info(self):
+        # here's the arughgijerfiefl main problem
+
+        query = f"SELECT * FROM products WHERE prd_id = '{self.prd_id}'"
+        db = DatabaseManager(name="login.sql")
+        result = db.search(query)
+        # print(f"({self.prd_id}), {result}") #DEBUGGGGG :P
+        db.close()
+
+        if result and len(result) > 0:
+            ingredients_text = result[0][3]
+            allergens_text = result[0][4]
+            restrictions_text = result[0][5]
+            country_text = result[0][8]
+            self.p_price = int(result[0][6])
+
+            self.ids.ingredients.text = f"Ingredients: {ingredients_text}"
+            self.ids.allergens.text = f"Allergens: {allergens_text}"
+            self.ids.restrictions.text = f"Restrictions: {restrictions_text}"
+            self.ids.country.text = f"Country of Origin: {country_text}"
+
+    def on_pre_enter(self):
+        self.update_info()
+```
+
+```.kv
+ProductCardDeactivated:
+                size_hint: None, None
+                size: 560, 300
+                image: root.image
+                p_name: root.p_name
+                price: root.price
+                prd_id: root.prd_id
+```
 
 ---
 Coded using the language Python. [^1]
